@@ -2,16 +2,12 @@ import React from 'react';
 import { View, FlatList, StyleSheet } from 'react-native';
 import PlayerItem from '../components/PlayerItem';
 
-const players = [
+export const players = [
   { id: '1', name: 'Abdelkrim ANBIA', position: 'GK', photo: require('../assets/images/aniba1.png'), timeIn: '22:18', timeOut: '12:18' },
   { id: '10', name: 'Soufiane EL MESRAR', position: 'MO', photo: require('../assets/images/mesrar.png'), timeIn: '22:18', timeOut: '12:18' },
   { id: '3', name: 'Anas EL AYAN', position: 'AT', photo: require('../assets/images/ayan.png'), timeIn: '22:18', timeOut: '12:18' },
   { id: '8', name: 'Soufian CHAARAOUI', position: 'AT', photo: require('../assets/images/chaaraoui.png'), timeIn: '22:18', timeOut: '12:18' },
-  //__________________________________________________________________________________
-  // { id: '1', name: 'Abdelkrim ANBIA', position: 'GK', photo: require('../assets/images/aniba1.png'), timeIn: '22:18', timeOut: '12:18' },
-  // { id: '10', name: 'Soufiane EL MESRAR', position: 'MO', photo: require('../assets/images/mesrar.png'), timeIn: '22:18', timeOut: '12:18' },
-  // { id: '3', name: 'Anas EL AYAN', position: 'AT', photo: require('../assets/images/ayan.png'), timeIn: '22:18', timeOut: '12:18' },
-  // { id: '8', name: 'Soufian CHAARAOUI', position: 'AT', photo: require('../assets/images/chaaraoui.png'), timeIn: '22:18', timeOut: '12:18' },
+
 ];
 
 const TimeScreen = () => {
