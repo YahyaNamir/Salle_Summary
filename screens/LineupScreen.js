@@ -2,11 +2,11 @@ import React from 'react';
 import { View, Text, StyleSheet, ImageBackground } from 'react-native';
 
 const positions = {
-  GK: { top: '8%', right: '-7%' },
-  LB: { top: '25%', left: '20%' },
-  RB: { top: '25%', right: '20%' },
-  LM: { top: '47%', left: '35%' },
-  RM: { top: '47%', right: '35%' },
+  GK: { top: '10%', right: '-7%' },
+  LB: { top: '29%', left: '20%' },
+  RB: { top: '29%', right: '20%' },
+  LM: { top: '52%', left: '30%' },
+  RM: { top: '52%', right: '30%' },
 };
 
 const players = [
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   background: {
     flex: 1,
     width: '100%',
-    height: '80%',
+    height: '90%',
     resizeMode: 'cover',
     justifyContent: 'center',
     alignItems: 'center',
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 20,
+    padding: 15,
     
   },
   circle: {
