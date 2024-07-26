@@ -17,9 +17,6 @@ const styles = StyleSheet.create({
     fontFamily: 'Regular-Bold',
   },
   Text: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     fontFamily: 'Regular-Bold',
   },
 });
