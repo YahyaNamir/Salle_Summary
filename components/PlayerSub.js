@@ -9,7 +9,7 @@ const PlayerSub = ({substitution}) => {
         style={{
           flexDirection: 'row-reverse',
           justifyContent: 'space-between',
-          // width: '100%',
+          width: '100%',
           // alignItems: 'center',
         }}>
         <View>
