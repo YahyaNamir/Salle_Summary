@@ -64,7 +64,7 @@ const PlayerSub = ({substitution}) => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
-    alignItems: 'center',
+    // alignItems: 'center',
     paddingVertical: 8,
     width: '100%',
     // marginLeft: 10,
