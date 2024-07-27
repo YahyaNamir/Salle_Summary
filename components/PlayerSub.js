@@ -6,12 +6,12 @@ const PlayerSub = ({substitution}) => {
   return (
     <View style={styles.container}>
       <View
-        // style={{
-        //   flexDirection: 'row-reverse',
-        //   // justifyContent: 'space-between',
-        //   // width: '100%',
-        //   // alignItems: 'center',
-        // }}>
+        style={{
+          flexDirection: 'row-reverse',
+          // justifyContent: 'space-between',
+          // width: '100%',
+          // alignItems: 'center',
+        }}>
         <View>
           <View style={styles.playerOutContainer}>
             <View style={styles.playerInfo}>
