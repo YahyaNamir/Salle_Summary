@@ -8,9 +8,9 @@ const PlayerSub = ({substitution}) => {
       <View
         style={{
           flexDirection: 'row-reverse',
-          justifyContent: 'space-between',
-          width: '100%',
-          // alignItems: 'center',
+          // justifyContent: 'space-between',
+          // width: '100%',
+          alignItems: 'center',
         }}>
         <View>
           <View style={styles.playerOutContainer}>
