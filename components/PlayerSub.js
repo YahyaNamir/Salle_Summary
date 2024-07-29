@@ -6,7 +6,7 @@ const PlayerSub = ({substitution}) => {
   return (
     <View style={styles.container}>
       <View style={styles.substitutionContainer}>
-        <View style={styles.timeContainer}>
+      <View style={styles.timeContainer}>
           <Text style={styles.time}>{substitution.time}</Text>
           <Icon name="access-time" size={20} color="#000000" />
         </View>
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    margin: 5,
+    margin: 10,
     padding: 5,
   },
   playerContainer: {
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   position: {
-    backgroundColor: '#c1c416b4',
+    backgroundColor: '#d0d30e',
     color: '#000000',
     fontFamily: 'Poppins-Regular',
     padding: 2,
