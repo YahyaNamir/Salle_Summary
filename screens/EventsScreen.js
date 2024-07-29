@@ -7,7 +7,7 @@ const EventsScreen = () => {
   const events = [
     {
       id: '1',
-      iconName: 'sd-card-alert', 
+      iconName: 'insert-drive-file', 
       iconColor: '#FFD700',
       event: 'Carton jaune',
       player: 'Anas EL AYAN',
@@ -29,12 +29,12 @@ const EventsScreen = () => {
       iconColor: '#ff0000',
       event: 'But encaisser',
       player: 'ADVERSAIRE',
-      position: 'AD',
+      position: '--',
       time: '11:06',
     },
     {
       id: '4',
-      iconName: 'sd-card-alert', 
+      iconName: 'insert-drive-file', 
       iconColor: '#FFD700',
       event: 'Carton jaune',
       player: 'Anas EL AYAN',
@@ -43,7 +43,7 @@ const EventsScreen = () => {
     },
     {
       id: '5',
-      iconName: 'sd-card-alert', 
+      iconName: 'insert-drive-file', 
       iconColor: '#FF0000',
       event: 'Carton rouge',
       player: 'Anas EL AYAN',
@@ -64,6 +64,15 @@ const EventsScreen = () => {
       iconName: 'sports-soccer',
       iconColor: '#000000',
       event: 'But marqué',
+      player: 'Soufiane CHAARAOUI',
+      position: 'AT',
+      time: '17:45',
+    },
+    {
+      id: '8',
+      iconName: 'sports-soccer',
+      iconColor: '#000000',
+      event: 'yellw card',
       player: 'Soufiane CHAARAOUI',
       position: 'AT',
       time: '17:45',
