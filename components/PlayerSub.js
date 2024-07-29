@@ -5,14 +5,12 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 const PlayerSub = ({substitution}) => {
   return (
     <View style={styles.container}>
-      <View
-        style={{
-          flexDirection: 'row-reverse',
-        //   justifyContent: 'space-between',
-        //   width: '100%',
-          alignItems: 'center',
-        }}>
-        <View>
+      <View style={styles.substitutionContainer}>
+        <View style={styles.timeContainer}>
+          <Text style={styles.time}>{substitution.time}</Text>
+          <Icon name="access-time" size={20} color="#000000" />
+        </View>
+        <View style={styles.playerContainer}>
           <View style={styles.playerOutContainer}>
             <View style={styles.playerInfo}>
               <Image
@@ -32,6 +30,7 @@ const PlayerSub = ({substitution}) => {
               </View>
             </View>
           </View>
+          <View style={styles.space} />
           <View style={styles.playerInContainer}>
             <View style={styles.playerInfo}>
               <Image
@@ -52,10 +51,6 @@ const PlayerSub = ({substitution}) => {
             </View>
           </View>
         </View>
-        <View style={styles.timeContainer}>
-          <Text style={styles.time}>{substitution.time}</Text>
-          <Icon name="access-time" size={20} color="#000000" />
-        </View>
       </View>
     </View>
   );
@@ -64,14 +59,33 @@ const PlayerSub = ({substitution}) => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
-    // alignItems: 'center',
     paddingVertical: 8,
     width: '100%',
-    // marginLeft: 10,
+  },
+  substitutionContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  timeContainer: {
+    borderWidth: 1,
+    borderColor: '#b9b904',
+    borderRadius: 20,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 5,
+    padding: 5,
+  },
+  playerContainer: {
+    flexDirection: 'column',
+    flex: 1,
+    marginLeft: 10,
   },
   playerOutContainer: {
-    marginLeft: 35,
-    width: '80%',
+    width: '100%',
+  },
+  space: {
+    height: 15,
   },
   aligned: {
     flexDirection: 'row',
@@ -80,24 +94,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   playerInContainer: {
-    marginLeft: 35,
-    width: '80%',
-  },
-  timeContainer: {
-    borderWidth: 1,
-    borderColor: '#b9b904',
-    // width: '20%',
-    borderRadius: 20,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    margin: 5,
+    width: '100%',
   },
   playerInfo: {
     flexDirection: 'row',
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
-    width: '100%',
+    width: '85%',
   },
   photo: {
     width: 30,
@@ -106,8 +109,6 @@ const styles = StyleSheet.create({
   },
   name: {
     fontFamily: 'Poppins-Regular',
-    // maxWidth:600,
-    // minWidth: 200,
     fontSize: 16,
     color: '#000',
     marginHorizontal: 5,
