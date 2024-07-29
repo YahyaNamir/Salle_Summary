@@ -69,8 +69,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   itemContainer: {
-    // flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: 'row',
+    // alignItems: 'center',
     borderRadius: 5,
   },
 });
