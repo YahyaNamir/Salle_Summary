@@ -57,7 +57,7 @@ const SubsScreen = () => {
       <FlatList
         data={substitutions}
         renderItem={renderItem}
-        keyExtractor={item => item.id}
+        // keyExtractor={item => item.id}
       />
     </View>
   );
