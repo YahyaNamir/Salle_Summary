@@ -55,7 +55,7 @@ const SubsScreen = () => {
   return (
     <View style={styles.container}>
       <FlatList
-        data={substitutions}
+        // data={substitutions}
         renderItem={renderItem}
         keyExtractor={item => item.id}
       />
