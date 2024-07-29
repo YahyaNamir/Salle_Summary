@@ -69,10 +69,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   itemContainer: {
-    flexDirection: 'row',
+    // flexDirection: 'row',
     alignItems: 'center',
     borderRadius: 5,
   },
 });
-
 export default SubsScreen;
