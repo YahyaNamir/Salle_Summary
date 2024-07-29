@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
     color: '#000000',
     fontFamily: 'Poppins-Regular',
     padding: 2,
-    width: 30,
+    // width: 30,
   },
   time: {
     fontFamily: 'Poppins-Regular',
