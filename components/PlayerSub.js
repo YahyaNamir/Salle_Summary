@@ -126,14 +126,14 @@ const styles = StyleSheet.create({
     color: '#000000',
     fontFamily: 'Poppins-Regular',
     padding: 2,
-    // width: 30,
+    width: 30,
   },
-  time: {
-    fontFamily: 'Poppins-Regular',
-    fontSize: 13,
-    color: '#000000',
-    marginRight: 5,
-  },
+  // time: {
+  //   fontFamily: 'Poppins-Regular',
+  //   fontSize: 13,
+  //   color: '#000000',
+  //   marginRight: 5,
+  // },
 });
 
 export default PlayerSub;
