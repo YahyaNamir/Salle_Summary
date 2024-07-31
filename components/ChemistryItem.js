@@ -6,7 +6,7 @@ export default function ChemistryItem({ chemistry }) {
     <View style={styles.itemContainer}>
       <Text style={{fontFamily: 'Poppins-Bold', marginLeft: 5}} >{chemistry.name}</Text>
       <Text style={{fontFamily: 'Poppins-Bold', marginLeft: 5}} >{chemistry.minutePlayer}</Text>
-      <Text style={{fontFamily: 'Poppins-Bold', marginLeft: 5}} >{chemistry.goal}</Text>
+      {/* <Text style={{fontFamily: 'Poppins-Bold', marginLeft: 5}} >{chemistry.goal}</Text> */}
       {/* <Text style={{fontFamily: 'Poppins-Bold', marginLeft: 5}} >{chemistry.receivedGoal}</Text> */}
       {/* <Text style={{fontFamily: 'Poppins-Bold', marginLeft: 5}} >{chemistry.yellowCard}</Text> */}
       {/* <Text style={{fontFamily: 'Poppins-Bold', marginLeft: 5}} >{chemistry.redCard}</Text> */}
