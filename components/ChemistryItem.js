@@ -1,15 +1,16 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
 import React from 'react';
 
 export default function ChemistryItem({ chemistry }) {
   return (
     <View style={styles.itemContainer}>
-      <Text style={{fontFamily: 'Poppins-Bold', marginLeft: 5}} >{chemistry.name}</Text>
-      <Text style={{fontFamily: 'Poppins-Bold', marginLeft: 5}} >{chemistry.minutePlayer}</Text>
-      <Text style={{fontFamily: 'Poppins-Bold', marginLeft: 5}} >{chemistry.goal}</Text>
-      <Text style={{fontFamily: 'Poppins-Bold', marginLeft: 5}} >{chemistry.receivedGoal}</Text>
-      <Text style={{fontFamily: 'Poppins-Bold', marginLeft: 5}} >{chemistry.yellowCard}</Text>
-      <Text style={{fontFamily: 'Poppins-Bold', marginLeft: 5}} >{chemistry.redCard}</Text>
+      <Image source={chemistry.picture} style={styles.picture} />
+      <Text style={styles.name}>{chemistry.name}</Text>
+      <Text style={styles.text}>{chemistry.minutePlayer}</Text>
+      <Text style={styles.text}>{chemistry.goal}</Text>
+      <Text style={styles.text}>{chemistry.receivedGoal}</Text>
+      <Text style={styles.text}>{chemistry.yellowCard}</Text>
+      <Text style={styles.text}>{chemistry.redCard}</Text>
     </View>
   );
 }
@@ -21,5 +22,21 @@ const styles = StyleSheet.create({
     padding: 10,
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
+  },
+  picture: {
+    width: 30,
+    height: 30,
+    borderRadius: 50,
+    marginRight: 10,
+  },
+  name: {
+    fontFamily: 'Poppins-Bold',
+    width: 92, 
+    textAlign: 'left',
+  },
+  text: {
+    fontFamily: 'Poppins-Bold',
+    width: 50, 
+    textAlign: 'center',
   },
 });
