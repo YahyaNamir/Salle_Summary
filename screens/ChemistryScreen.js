@@ -4,8 +4,8 @@ import ChemistryItem from '../components/ChemistryItem';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const chemistryData = [
-  // { id: '1', picture: require('../assets/images/chaaraoui.png'), name: 'Soufiane CHAARAOUI', goal: 5, minutePlayer: '90:00', yellowCard: 2, redCard: 0, receivedGoal: 3 },
-  // { id: '2', picture: require('../assets/images/ayan.png'), name: 'Anas EL AYAN', goal: 2, minutePlayer: '85:00', yellowCard: 1, redCard: 0, receivedGoal: 2 },
+  { id: '1', picture: require('../assets/images/chaaraoui.png'), name: 'Soufiane CHAARAOUI', goal: 5, minutePlayer: '90:00', yellowCard: 2, redCard: 0, receivedGoal: 3 },
+  { id: '2', picture: require('../assets/images/ayan.png'), name: 'Anas EL AYAN', goal: 2, minutePlayer: '85:00', yellowCard: 1, redCard: 0, receivedGoal: 2 },
   { id: '3', picture: require('../assets/images/mesrar.png'), name: 'Soufiane EL MESRAR', goal: 8, minutePlayer: '95:00', yellowCard: 3, redCard: 1, receivedGoal: 5 },
   { id: '4', picture: require('../assets/images/aniba1.png'), name: 'Abdelkrim ANBIA', goal: 4, minutePlayer: '80:00', yellowCard: 1, redCard: 0, receivedGoal: 4 },
   { id: '5', picture: require('../assets/images/chaaraoui.png'), name: 'Soufiane CHAARAOUI', goal: 7, minutePlayer: '100:00', yellowCard: 2, redCard: 0, receivedGoal: 6 },
