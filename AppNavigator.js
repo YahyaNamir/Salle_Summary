@@ -8,7 +8,7 @@ import SubsScreen from './screens/SubsScreen';
 import EventsScreen from './screens/EventsScreen';
 import CustomHeader from './components/CustomHeader';
 import CustomTabBar from './components/CustomTabBar';
-import Chemistry from './screens/Chemistry';
+import ChemistryScreen from './screens/ChemistryScreen';
 
 const Tab = createMaterialTopTabNavigator();
 const Stack = createStackNavigator();
@@ -19,7 +19,7 @@ const TabNavigator = () => (
     <Tab.Screen name="LINEUP" component={LineupScreen} />
     <Tab.Screen name="SUBS" component={SubsScreen} />
     <Tab.Screen name="EVENTS" component={EventsScreen} />
-    <Tab.Screen name="Chemistry" component={Chemistry} />
+    <Tab.Screen name="CHEMISTRY" component={ChemistryScreen} />
   </Tab.Navigator>
 );
 

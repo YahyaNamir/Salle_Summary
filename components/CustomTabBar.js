@@ -45,8 +45,9 @@ const styles = StyleSheet.create({
     borderRadius: 50,
   },
   tab: {
-    flex: 1,
-    alignItems: 'center',
+    alignItems: 'flex-start',
+    alignContent: 'space-between',
+    marginLeft: 20,
   },
   tabText: {
     color: '#000000',
