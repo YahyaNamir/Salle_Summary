@@ -1,7 +1,7 @@
-import { View, Text, StyleSheet, Image } from 'react-native';
+import {View, Text, StyleSheet, Image} from 'react-native';
 import React from 'react';
 
-export default function ChemistryItem({ chemistry }) {
+export default function ChemistryItem({chemistry}) {
   return (
     <View style={styles.itemContainer}>
       <Image source={chemistry.picture} style={styles.picture} />
@@ -11,6 +11,7 @@ export default function ChemistryItem({ chemistry }) {
       <Text style={styles.text}>{chemistry.receivedGoal}</Text>
       <Text style={styles.text}>{chemistry.yellowCard}</Text>
       <Text style={styles.text}>{chemistry.redCard}</Text>
+      <Text style={styles.text}>{chemistry.foulCommitted}</Text>
     </View>
   );
 }
@@ -19,24 +20,28 @@ const styles = StyleSheet.create({
   itemContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 10,
+    padding: 15,
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
   },
   picture: {
-    width: 30,
-    height: 30,
+    width: 25,
+    height: 25,
     borderRadius: 50,
-    marginRight: 10,
+    marginRight: 8,
   },
   name: {
     fontFamily: 'Poppins-Bold',
-    width: 92, 
+    width: 122,
+    fontSize: 12,
     textAlign: 'left',
+    color: "#272626",
   },
   text: {
     fontFamily: 'Poppins-Bold',
-    width: 50, 
+    width: 40,
+    fontSize: 12,
     textAlign: 'center',
+    color: "black",
   },
 });
