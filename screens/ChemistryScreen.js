@@ -178,7 +178,7 @@ export default function ChemistryScreen() {
             <Icon name="shield" size={15} color="#fff" style={styles.icon} />
             <Icon name="square" size={15} color="yellow" style={styles.icon} />
             <Icon name="square" size={15} color="red" style={styles.icon} />
-            <Icon name="sifflet" size={15} color="#FF0000" style={styles.icon}/>
+            <Icon name="exclamation-triangle" size={15} color="#FF0000" style={styles.icon}/>
               </View>
           {/* </View> */}
           <FlatList
@@ -197,7 +197,7 @@ export default function ChemistryScreen() {
             <Icon name="shield" size={15} color="#fff" style={styles.icon} />
             <Icon name="square" size={15} color="yellow" style={styles.icon} />
             <Icon name="square" size={15} color="red" style={styles.icon} />
-            <Icon name="sifflet" size={15} color="#FF0000" style={styles.icon}/>
+            <Icon name="exclamation-triangle" size={15} color="#FF0000" style={styles.icon}/>
           </View>
           <FlatList
             data={group2}
