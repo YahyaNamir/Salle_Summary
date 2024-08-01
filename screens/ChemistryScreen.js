@@ -275,7 +275,7 @@ const styles = StyleSheet.create({
   TOTAL: {
     fontFamily: 'Poppins-Bold',
     width: 120,
-    color: "black",
+    // color: "black",
     fontSize: 13,
   },
 });
