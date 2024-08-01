@@ -270,7 +270,7 @@ const styles = StyleSheet.create({
     // width: 45,
     marginLeft :31,
     textAlign: 'center',
-    fontSize: 11,
+    // fontSize: 11,
   },
   TOTAL: {
     fontFamily: 'Poppins-Bold',
