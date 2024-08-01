@@ -253,7 +253,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   iconView :{
-    // height: 2,
+    height: 2,
     display: 'flex',
     flexDirection: 'row',
   },
