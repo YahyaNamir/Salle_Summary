@@ -267,7 +267,7 @@ const styles = StyleSheet.create({
   totalsText: {
     fontFamily: 'Poppins-Bold',
     color: "black",
-    // width: 45,
+    width: 45,
     marginLeft :31,
     textAlign: 'center',
     // fontSize: 11,
