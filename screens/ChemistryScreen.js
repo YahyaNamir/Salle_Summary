@@ -254,7 +254,7 @@ const styles = StyleSheet.create({
   },
   iconView :{
     height: 2,
-    display: 'flex',
+    // display: 'flex':,
     flexDirection: 'row',
   },
   totalsContainer: {
