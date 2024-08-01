@@ -189,7 +189,7 @@ const calculateTotals = data => {
       totals.minutes = player.minutePlayer;
       totals.yellowCards += player.yellowCard;
       totals.redCards += player.redCard;
-      totals.receivedGoals += player.receivedGoal;
+      totals.receivedGoals = player.receivedGoal;
       totals.foulCommitted += player.foulCommitted;
       return totals;
     },
