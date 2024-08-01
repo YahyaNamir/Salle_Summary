@@ -262,10 +262,10 @@ export default function ChemistryScreen() {
               <View style={styles.iconView}>
                 <Icon name="clock-o" size={18} color="#fff" style={styles.icon} />
                 <Icon name="soccer-ball-o" size={18} color="#fff" style={styles.icon} />
-                <Icon name="shield" size={18} color="#fff" style={styles.icon} />
+                <Icon name="shield" size={18} color="#ff0000" style={styles.icon} />
                 <Icon name="square" size={18} color="yellow" style={styles.icon} />
                 <Icon name="square" size={18} color="red" style={styles.icon} />
-                <Icon name="exclamation-triangle" size={18} color="#FF0000" style={styles.icon} />
+                <Icon name="exclamation-triangle" size={18} color="#e5ff00" style={styles.icon} />
               </View>
             </View>
             <FlatList
@@ -283,10 +283,10 @@ export default function ChemistryScreen() {
               <View style={styles.iconView}>
                 <Icon name="clock-o" size={18} color="#fff" style={styles.icon} />
                 <Icon name="soccer-ball-o" size={18} color="#fff" style={styles.icon} />
-                <Icon name="shield" size={18} color="#fff" style={styles.icon} />
+                <Icon name="shield" size={18} color="#ff0000" style={styles.icon} />
                 <Icon name="square" size={18} color="yellow" style={styles.icon} />
                 <Icon name="square" size={18} color="red" style={styles.icon} />
-                <Icon name="exclamation-triangle" size={18} color="#FF0000" style={styles.icon} />
+                <Icon name="exclamation-triangle" size={18} color="#e5ff00" style={styles.icon} />
               </View>
             </View>
             <FlatList
@@ -304,10 +304,10 @@ export default function ChemistryScreen() {
               <View style={styles.iconView}>
                 <Icon name="clock-o" size={18} color="#fff" style={styles.icon} />
                 <Icon name="soccer-ball-o" size={18} color="#fff" style={styles.icon} />
-                <Icon name="shield" size={18} color="#fff" style={styles.icon} />
+                <Icon name="shield" size={18} color="#ff0000" style={styles.icon} />
                 <Icon name="square" size={18} color="yellow" style={styles.icon} />
                 <Icon name="square" size={18} color="red" style={styles.icon} />
-                <Icon name="exclamation-triangle" size={18} color="#FF0000" style={styles.icon} />
+                <Icon name="exclamation-triangle" size={18} color="#e5ff00" style={styles.icon} />
               </View>
             </View>
             <FlatList
