@@ -38,7 +38,7 @@ export const players = [
 ];
 
 const TimeScreen = () => {
-  const doubledPlayers = [...players, ...players];
+  // const doubledPlayers = players;
 
   const renderItem = ({item, index}) => {
     const backgroundColor = index % 2 === 0 ? '#fff' : '#f0f0f0';
@@ -53,7 +53,7 @@ const TimeScreen = () => {
   return (
     <View style={styles.container}>
       <FlatList
-        data={doubledPlayers}
+        data={players}
         renderItem={renderItem}
         keyExtractor={item => item.id}
       />

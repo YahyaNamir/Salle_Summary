@@ -35,13 +35,13 @@ const styles = StyleSheet.create({
     width: 122,
     fontSize: 12,
     textAlign: 'left',
-    color: "#272626",
+    color: '#272626',
   },
   text: {
     fontFamily: 'Poppins-Bold',
     width: 40,
     fontSize: 12,
     textAlign: 'center',
-    color: "black",
+    color: 'black',
   },
 });
