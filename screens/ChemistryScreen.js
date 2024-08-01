@@ -119,7 +119,7 @@ const chemistryData = [
     picture: require('../assets/images/chaaraoui.png'),
     name: 'Player 1',
     goal: 7,
-    minutePlayer: '50:00',
+    minutePlayer: '80:00',
     yellowCard: 2,
     redCard: 0,
     receivedGoal: 5,
