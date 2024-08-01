@@ -86,7 +86,7 @@ const chemistryData = [
     picture: require('../assets/images/aniba1.png'),
     name: 'Player 4',
     goal: 5,
-    minutePlayer: '80:00',
+    minutePlayer: '800:00',
     yellowCard: 2,
     redCard: 1,
     receivedGoal: 7,
@@ -248,7 +248,7 @@ const styles = StyleSheet.create({
   icon: {
     marginLeft :30,
     // marginRight :20,
-    // width: 45,
+    width: 45,
     // marginLeft:0,
     textAlign: 'center',
   },
