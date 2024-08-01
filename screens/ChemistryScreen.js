@@ -167,7 +167,7 @@ export default function ChemistryScreen() {
           <Text style={styles.teamHeader}>Team 1</Text>
           <View style={styles.header}>
             <Text style={styles.headerText}>Player</Text>
-            {/* <View style={styles.iconView}> */}
+            <View style={styles.iconView}>
             <Icon name="clock-o" size={15} color="#fff" style={styles.icon} />
             <Icon
               name="soccer-ball-o"
@@ -180,7 +180,7 @@ export default function ChemistryScreen() {
             <Icon name="square" size={15} color="red" style={styles.icon} />
             <Icon name="exclamation-triangle" size={15} color="#FF0000" style={styles.icon}/>
               </View>
-          {/* </View> */}
+          </View>
           <FlatList
             data={group1}
             renderItem={renderItem}
@@ -246,17 +246,17 @@ const styles = StyleSheet.create({
     width: 99,
   },
   icon: {
-    marginLeft :30,
-    // marginRight :20,
+    // marginLeft :30,
+    marginRight :20,
     width: 45,
-    // marginLeft:0,
+    marginLeft:0,
     textAlign: 'center',
   },
-  // iconView :{
-  //   // height: 2,
-  //   display: 'flex',
-  //   flexDirection: 'row',
-  // },
+  iconView :{
+    // height: 2,
+    display: 'flex',
+    flexDirection: 'row',
+  },
   totalsContainer: {
     flexDirection: 'row',
     padding: 10,
