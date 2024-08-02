@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
   },
   icon: {
     marginLeft: 25,
-    // marginBottom: 12,
+    marginBottom: 12,
   },
   headerTitle: {
     fontFamily: 'Regular-Bold',
