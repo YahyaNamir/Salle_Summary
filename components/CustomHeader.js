@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
   },
   leftIcon: {
     flex: 1,
-    // alignItems: 'flex-start',
+    alignItems: 'flex-start',
   },
   centerContent: {
     flex: 2,
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
   },
   rightIcon: {
     flex: 1,
-    alignItems: 'flex-end',
+    // alignItems: 'flex-end',
   },
   icon: {
     marginLeft: 25,
