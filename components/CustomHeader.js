@@ -81,11 +81,11 @@ const styles = StyleSheet.create({
   },
   rightIcon: {
     flex: 1,
-    // alignItems: 'flex-end',
+    alignItems: 'flex-end',
   },
   icon: {
     marginLeft: 25,
-    marginBottom: 12,
+    // marginBottom: 12,
   },
   headerTitle: {
     fontFamily: 'Regular-Bold',
