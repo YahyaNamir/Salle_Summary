@@ -105,6 +105,7 @@ const styles = StyleSheet.create({
     color: '#000000',
     marginLeft: 10,
     //10
+    //11
   },
 });
 
