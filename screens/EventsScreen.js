@@ -29,7 +29,7 @@ const EventsScreen = () => {
       iconColor: '#ff0000',
       event: 'But encaisser',
       player: 'ADVERSAIRE',
-      // position: '--',
+      // position: '----',
       time: '11:06',
     },
     {
