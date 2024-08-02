@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
   },
   leftIcon: {
     flex: 1,
-    alignItems: 'flex-start',
+    // alignItems: 'flex-start',
   },
   centerContent: {
     flex: 2,
