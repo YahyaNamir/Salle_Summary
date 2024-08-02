@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   headerTitleS: {
-    fontFamily: 'Regular-SemiBold',
+    // fontFamily: 'Regular-SemiBold',
     fontSize: 20,
     color: '#ffffff',
     marginLeft: 10,
