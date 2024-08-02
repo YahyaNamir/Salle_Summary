@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 1,
     shadowRadius: 1,
     elevation: 2,
-    // borderBottomEndRadius: 25,
+    borderBottomEndRadius: 25,
     borderBottomStartRadius: 25,
   },
   headerContainer: {
