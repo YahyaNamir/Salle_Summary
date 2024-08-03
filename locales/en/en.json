@@ -12,6 +12,7 @@
           "RED_CARD": "Red Card"
     },
     "TAB": {
+          "TIME": "Time",
           "LINEUP": "Lineup",
           "SUBS": "Subs",
           "EVENTS": "Events",
