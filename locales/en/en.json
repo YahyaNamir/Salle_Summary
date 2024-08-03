@@ -8,7 +8,6 @@
     "RM": "RM",
     "EVENTS": {
           "GOAL_SCORED": "Goal Scored",
-          "GOAL_CONCEDED": "Goal Conceded",
           "RED_CARD": "Red Card"
     },
     "TAB": {
