@@ -7,7 +7,6 @@
     "LM": "LM",
     "RM": "RM",
     "EVENTS": {
-          "YELLOW_CARD": "Yellow Card",
           "GOAL_SCORED": "Goal Scored",
           "GOAL_CONCEDED": "Goal Conceded",
           "RED_CARD": "Red Card"
