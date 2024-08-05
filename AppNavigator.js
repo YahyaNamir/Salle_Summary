@@ -9,11 +9,9 @@ import EventsScreen from './screens/EventsScreen';
 import CustomHeader from './components/CustomHeader';
 import CustomTabBar from './components/CustomTabBar';
 import ChemistryScreen from './screens/ChemistryScreen';
-import './services/i18next'; 
 
 const Tab = createMaterialTopTabNavigator();
 const Stack = createStackNavigator();
-// const { t, i18n } = useTransition();
 
 const TabNavigator = () => (
   <Tab.Navigator tabBar={props => <CustomTabBar {...props} />}>

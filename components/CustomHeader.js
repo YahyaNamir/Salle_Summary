@@ -1,11 +1,8 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import { useTranslation } from 'react-i18next';
 
 const CustomHeader = () => {
-  const { t } = useTranslation();
-
   return (
     <>
       <View style={styles.headerContainerS}>
@@ -14,7 +11,7 @@ const CustomHeader = () => {
         </View>
         <View style={styles.centerContent}>
           <Icon name="assignment" size={30} color="#ffffff" />
-          <Text style={styles.headerTitleS}>{t('SUMMARY')}</Text>
+          <Text style={styles.headerTitleS}>SUMMARY</Text>
         </View>
         <View style={styles.rightIcon}>
           <Icon name="delete" size={30} color="#ffffff" />
@@ -24,7 +21,7 @@ const CustomHeader = () => {
         <View style={styles.headerContent}>
           <Icon name="date-range" size={25} color="#d7bf06" style={styles.icon} />
           <View>
-            <Text style={styles.headerTitle}>{t('OPPONENT')}</Text>
+            <Text style={styles.headerTitle}>OPPONENT</Text>
             <Text style={styles.headerSubtitle}>16.02.2024 - 17:35:21</Text>
           </View>
         </View>
