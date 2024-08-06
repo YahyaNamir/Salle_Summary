@@ -21,7 +21,7 @@ const CustomHeader = () => {
         <View style={styles.headerContent}>
           <Icon name="date-range" size={25} color="#d7bf06" style={styles.icon} />
           <View>
-            {/* <Text style={styles.headerTitle}>OPPONENT</Text> */}
+            <Text style={styles.headerTitle}>OPPONENT</Text>
             <Text style={styles.headerSubtitle}>16.02.2024 - 17:35:21</Text>
           </View>
         </View>
