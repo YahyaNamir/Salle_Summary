@@ -68,7 +68,6 @@ const styles = StyleSheet.create({
   },
   line: {
     fontFamily: 'Poppins-Bold',
-    // fontFamily: 'Poppins-Regular',
     fontSize: 14,
     color: 'black',
   },
