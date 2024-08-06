@@ -13,7 +13,7 @@ const EventItem = ({ iconName, iconColor, event, player, position, time, backgro
       <View style={[styles.timeContainer, player == 'ADVERSAIRE' && {marginLeft: 50}]}>
         <Icon name="timer" size={15} color="#000000" style={styles.timeIcon} />
         <Text style={styles.line}>|</Text>
-        {/* <Text style={styles.time}>{time}</Text> */}
+        <Text style={styles.time}>{time}</Text>
       </View>
     </View>
   );
