@@ -7,7 +7,7 @@ const CustomHeader = () => {
     <>
       <View style={styles.headerContainerS}>
         <View style={styles.leftIcon}>
-          {/* <Icon name="arrow-back" size={30} color="#ffffff" /> */}
+          <Icon name="arrow-back" size={30} color="#ffffff" />
         </View>
         <View style={styles.centerContent}>
           <Icon name="assignment" size={30} color="#ffffff" />
