@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, FlatList, StyleSheet, Text, ScrollView, TouchableOpacity, Image } from 'react-native';
+import { View, FlatList, StyleSheet, Text, TouchableOpacity, Image } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import ChemistryItem from '../components/ChemistryItem';
 
@@ -136,17 +136,17 @@ const chemistryData = [
     receivedGoal: 10,
     foulCommitted: 4,
   },
-  {
-    id: '12',
-    picture: require('../assets/images/mesrar.png'),
-    name: 'Player 3',
-    goal: 3,
-    minutePlayer: '80:00',
-    yellowCard: 100,
-    redCard: 0,
-    receivedGoal: 10,
-    foulCommitted: 7,
-  },
+  // {
+  //   id: '12',
+  //   picture: require('../assets/images/mesrar.png'),
+  //   name: 'Player 3',
+  //   goal: 3,
+  //   minutePlayer: '80:00',
+  //   yellowCard: 100,
+  //   redCard: 0,
+  //   receivedGoal: 10,
+  //   foulCommitted: 7,
+  // },
   {
     id: '13',
     picture: require('../assets/images/aniba1.png'),
@@ -189,7 +189,7 @@ const calculateTotals = data => {
       totals.minutes = player.minutePlayer;
       totals.yellowCards += player.yellowCard;
       totals.redCards += player.redCard;
-      totals.receivedGoals = player.receivedGoal;
+      totals.receivedGoals += player.receivedGoal;
       totals.foulCommitted += player.foulCommitted;
       return totals;
     },
@@ -222,104 +222,65 @@ const AccordionItem = ({ children, title }) => {
   );
 };
 
-export default function ChemistryScreen() {
-  const group1 = chemistryData.slice(0, 5);
-  const group2 = chemistryData.slice(5, 10);
-  const group3 = chemistryData.slice(10, 15);
-  const totals1 = calculateTotals(group1);
-  const totals2 = calculateTotals(group2);
-  const totals3 = calculateTotals(group3);
+const renderItem = ({ item }) => (
+  <View style={{ backgroundColor: '#f0f0f0' }}>
+    <ChemistryItem chemistry={item} />
+  </View>
+);
 
-  const renderItem = ({ item, index }) => {
-    const backgroundColor = index % 2 === 0 ? '#fff' : '#f0f0f0';
+const renderTotals = totals => (
+  <View style={styles.totalsContainer}>
+    <Text style={styles.totalName}>TOTAL :</Text>
+    <Text style={styles.totalsText}>{totals.minutes}</Text>
+    <Text style={styles.totalsText}>{totals.goals}</Text>
+    <Text style={styles.totalsText}>{totals.receivedGoals}</Text>
+    <Text style={styles.totalsText}>{totals.yellowCards}</Text>
+    <Text style={styles.totalsText}>{totals.redCards}</Text>
+    <Text style={styles.totalsText}>{totals.foulCommitted}</Text>
+  </View>
+);
+
+export default function ChemistryScreen() {
+  const groups = [
+    chemistryData.slice(0, 5),
+    chemistryData.slice(5, 10),
+    chemistryData.slice(10, 15),
+  ];
+
+  const renderAccordion = (data, title) => {
+    const totals = calculateTotals(data);
 
     return (
-      <View style={{ backgroundColor }}>
-        <ChemistryItem chemistry={item} />
-      </View>
+      <AccordionItem title={title}>
+        <View style={styles.teamContainer}>
+          <View style={styles.header}>
+            <Text style={styles.headerText}>Player</Text>
+            <View style={styles.iconView}>
+              <Icon name="clock-o" size={18} color="#fff" style={styles.icon} />
+              <Icon name="soccer-ball-o" size={18} color="#fff" style={styles.icon} />
+              <Icon name="shield" size={18} color="#ff0000" style={styles.icon} />
+              <Icon name="square" size={18} color="yellow" style={styles.icon} />
+              <Icon name="square" size={18} color="red" style={styles.icon} />
+              <Icon name="exclamation-triangle" size={18} color="#e5ff00" style={styles.icon} />
+            </View>
+          </View>
+          <FlatList
+            data={data}
+            renderItem={renderItem}
+            keyExtractor={item => item.id}
+            ListFooterComponent={() => renderTotals(totals)}
+          />
+        </View>
+      </AccordionItem>
     );
   };
 
-  const renderTotals = totals => (
-    <View style={styles.totalsContainer}>
-      <Text style={styles.totalName}>TOTAL :</Text>
-      <Text style={styles.totalsText}>{totals.minutes}</Text>
-      <Text style={styles.totalsText}>{totals.goals}</Text>
-      <Text style={styles.totalsText}>{totals.receivedGoals}</Text>
-      <Text style={styles.totalsText}>{totals.yellowCards}</Text>
-      <Text style={styles.totalsText}>{totals.redCards}</Text>
-      <Text style={styles.totalsText}>{totals.foulCommitted}</Text>
-    </View>
-  );
-
   return (
-    <ScrollView style={styles.scrollContainer}>
-      <View style={styles.container}>
-        <AccordionItem title="Team 1" >
-          <View style={styles.teamContainer}>
-            <View style={styles.header}>
-              <Text style={styles.headerText}>Player</Text>
-              <View style={styles.iconView}>
-                <Icon name="clock-o" size={18} color="#fff" style={styles.icon} />
-                <Icon name="soccer-ball-o" size={18} color="#fff" style={styles.icon} />
-                <Icon name="shield" size={18} color="#ff0000" style={styles.icon} />
-                <Icon name="square" size={18} color="yellow" style={styles.icon} />
-                <Icon name="square" size={18} color="red" style={styles.icon} />
-                <Icon name="exclamation-triangle" size={18} color="#e5ff00" style={styles.icon} />
-              </View>
-            </View>
-            <FlatList
-              data={group1}
-              renderItem={renderItem}
-              keyExtractor={item => item.id}
-              ListFooterComponent={() => renderTotals(totals1)}
-            />
-          </View>
-        </AccordionItem>
-        <AccordionItem title="Team 2">
-          <View style={styles.teamContainer}>
-            <View style={styles.header}>
-              <Text style={styles.headerText}>Player</Text>
-              <View style={styles.iconView}>
-                <Icon name="clock-o" size={18} color="#fff" style={styles.icon} />
-                <Icon name="soccer-ball-o" size={18} color="#fff" style={styles.icon} />
-                <Icon name="shield" size={18} color="#ff0000" style={styles.icon} />
-                <Icon name="square" size={18} color="yellow" style={styles.icon} />
-                <Icon name="square" size={18} color="red" style={styles.icon} />
-                <Icon name="exclamation-triangle" size={18} color="#e5ff00" style={styles.icon} />
-              </View>
-            </View>
-            <FlatList
-              data={group2}
-              renderItem={renderItem}
-              keyExtractor={item => item.id}
-              ListFooterComponent={() => renderTotals(totals2)}
-            />
-          </View>
-        </AccordionItem>
-        <AccordionItem title="Team 3">
-          <View style={styles.teamContainer}>
-            <View style={styles.header}>
-              <Text style={styles.headerText}>Player</Text>
-              <View style={styles.iconView}>
-                <Icon name="clock-o" size={18} color="#fff" style={styles.icon} />
-                <Icon name="soccer-ball-o" size={18} color="#fff" style={styles.icon} />
-                <Icon name="shield" size={18} color="#ff0000" style={styles.icon} />
-                <Icon name="square" size={18} color="yellow" style={styles.icon} />
-                <Icon name="square" size={18} color="red" style={styles.icon} />
-                <Icon name="exclamation-triangle" size={18} color="#e5ff00" style={styles.icon} />
-              </View>
-            </View>
-            <FlatList
-              data={group3}
-              renderItem={renderItem}
-              keyExtractor={item => item.id}
-              ListFooterComponent={() => renderTotals(totals3)}
-            />
-          </View>
-        </AccordionItem>
-      </View>
-    </ScrollView>
+    <FlatList
+      data={groups}
+      renderItem={({ item, index }) => renderAccordion(item, `Team ${index + 1}`)}
+      keyExtractor={(item, index) => index.toString()}
+    />
   );
 }
 
@@ -332,9 +293,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
-  // teamContainer: {
-  //   // borderWidth: 5,
-  // },
   teamHeader: {
     fontSize: 17,
     fontFamily: 'Poppins-Bold',
@@ -399,5 +357,7 @@ const styles = StyleSheet.create({
     color: '#ffffff',
     fontFamily: 'Poppins-Bold'
   },
-
+  teamContainer: {
+    flex: 1,
+  },
 });

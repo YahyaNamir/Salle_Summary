@@ -15,7 +15,7 @@ const Stack = createStackNavigator();
 
 const TabNavigator = () => (
   <Tab.Navigator tabBar={props => <CustomTabBar {...props} />}>
-    <Tab.Screen name="TIME" component={TimeScreen} title="haha" />
+    <Tab.Screen name="TIME" component={TimeScreen} />
     <Tab.Screen name="LINEUP" component={LineupScreen} />
     <Tab.Screen name="SUBS" component={SubsScreen} />
     <Tab.Screen name="EVENTS" component={EventsScreen} />

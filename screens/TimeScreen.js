@@ -38,7 +38,6 @@ export const players = [
 ];
 
 const TimeScreen = () => {
-  // const doubledPlayers = players;
 
   const renderItem = ({item, index}) => {
     const backgroundColor = index % 2 === 0 ? '#fff' : '#f0f0f0';
