@@ -10,7 +10,7 @@ const CustomHeader = () => {
           <Icon name="arrow-back" size={30} color="#ffffff" />
         </View>
         <View style={styles.centerContent}>
-          <Icon name="assignment" size={30} color="#ffffff" />
+          {/* <Icon name="assignment" size={30} color="#ffffff" /> */}
           <Text style={styles.headerTitleS}>SUMMARY</Text>
         </View>
         <View style={styles.rightIcon}>
