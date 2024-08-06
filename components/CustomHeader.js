@@ -11,7 +11,7 @@ const CustomHeader = () => {
         </View>
         <View style={styles.centerContent}>
           <Icon name="assignment" size={30} color="#ffffff" />
-          {/* <Text style={styles.headerTitleS}>SUMMARY</Text> */}
+          <Text style={styles.headerTitleS}>SUMMARY</Text>
         </View>
         <View style={styles.rightIcon}>
           <Icon name="delete" size={30} color="#ffffff" />
