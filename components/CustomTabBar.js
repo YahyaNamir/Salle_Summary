@@ -25,7 +25,7 @@ const CustomTabBar = ({ state, descriptors, navigation }) => {
           <TouchableOpacity
             key={route.key}
             onPress={onPress}
-            // style={[styles.tab, isFocused ? styles.focusedTab : null]}
+            style={[styles.tab, isFocused ? styles.focusedTab : null]}
           >
             <Text  style={[styles.tabText, isFocused ? styles.tabTextFocus : null]}
             >{label}</Text>
