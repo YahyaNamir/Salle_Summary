@@ -10,7 +10,7 @@ const PlayerItem = ({ player }) => {
         <Text style={styles.name}>{player.name}</Text>
       </View>
       <View style={styles.icons}>
-        {/* <Text style={[styles.icon, styles.gk]}>{player.position}</Text> */}
+        <Text style={[styles.icon, styles.gk]}>{player.position}</Text>
         <Text style={[styles.icon, styles.timeIn]}>🟢 {player.timeIn}</Text>
         <Text style={[styles.icon, styles.timeOut]}>🔴 {player.timeOut}</Text>
       </View>
