@@ -4,7 +4,7 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 const PlayerItem = ({ player }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.id}>{player.id}</Text>
+      {/* <Text style={styles.id}>{player.id}</Text> */}
       <Image source={player.photo} style={styles.photo} />
       <View style={styles.info}>
         <Text style={styles.name}>{player.name}</Text>
