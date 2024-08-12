@@ -19,7 +19,7 @@ const TabNavigator = () => (
     <Tab.Screen name="LINEUP" component={LineupScreen} />
     <Tab.Screen name="SUBS" component={SubsScreen} />
     <Tab.Screen name="EVENTS" component={EventsScreen} />
-    {/* <Tab.Screen name="CHEMISTRY" component={ChemistryScreen} /> */}
+    <Tab.Screen name="CHEMISTRY" component={ChemistryScreen} />
   </Tab.Navigator>
 );
 
