@@ -4,17 +4,17 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import ChemistryItem from '../components/ChemistryItem';
 
 const chemistryData = [
-  // {
-  //   id: '1',
-  //   picture: require('../assets/images/chaaraoui.png'),
-  //   name: 'Soufiane CHAARAOUI',
-  //   goal: 10,
-  //   minutePlayer: '50:00',
-  //   yellowCard: 2,
-  //   redCard: 0,
-  //   receivedGoal: 5,
-  //   foulCommitted: 4,
-  // },
+  {
+    id: '1',
+    picture: require('../assets/images/chaaraoui.png'),
+    name: 'Soufiane CHAARAOUI',
+    goal: 10,
+    minutePlayer: '50:00',
+    yellowCard: 2,
+    redCard: 0,
+    receivedGoal: 5,
+    foulCommitted: 4,
+  },
   {
     id: '2',
     picture: require('../assets/images/ayan.png'),
