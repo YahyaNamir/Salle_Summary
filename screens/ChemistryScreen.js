@@ -169,17 +169,17 @@ const chemistryData = [
     receivedGoal: 10,
     foulCommitted: 1,
   },
-  // {
-  //   id: '15',
-  //   picture: require('../assets/images/ayan.png'),
-  //   name: 'Player 6',
-  //   goal: 2,
-  //   minutePlayer: '80:00',
-  //   yellowCard: 0,
-  //   redCard: 0,
-  //   receivedGoal: 10,
-  //   foulCommitted: 3,
-  // },
+  {
+    id: '15',
+    picture: require('../assets/images/ayan.png'),
+    name: 'Player 6',
+    goal: 2,
+    minutePlayer: '80:00',
+    yellowCard: 0,
+    redCard: 0,
+    receivedGoal: 10,
+    foulCommitted: 3,
+  },
 ];
 
 const calculateTotals = data => {
