@@ -152,7 +152,7 @@ const createPDF = async () => {
 
   try {
     let file = await RNHTMLtoPDF.convert(options);
-    Alert.alert('PDF Created', `File saved at ${file.filePath}`);
+    // Alert.alert('PDF Created', `File saved at ${file.filePath}`);
   } catch (error) {
     Alert.alert('Error', `Failed to create PDF: ${error.message}`);
   }
