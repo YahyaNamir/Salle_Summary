@@ -60,7 +60,7 @@ const playerItemHtml = player => `
 const playersHtml = playersList.map(player => playerItemHtml(player)).join('');
 
 const positions = {
-  GK: { top: '10%', left: '10%' },
+  // GK: { top: '10%', left: '10%' },
   MO: { top: '30%', left: '40%' },
   AT: { top: '50%', left: '30%' },
 };
