@@ -160,7 +160,7 @@ const createPDF = async () => {
 
 const PDFScreen = () => (
   <View style={styles.container}>
-    <Button title="Create PDF" onPress={createPDF} />
+    {/* <Button title="Create PDF" onPress={createPDF} /> */}
   </View>
 );
 
