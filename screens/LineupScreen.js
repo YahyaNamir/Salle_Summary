@@ -12,7 +12,7 @@ const positions = {
 const players = [
   { id: '1', name: 'ANBIA', position: 'GK' },
   { id: '2', name: 'EL MESRAR', position: 'LB' },
-  { id: '3', name: 'EL AYAN', position: 'RB' },
+  // { id: '3', name: 'EL AYAN', position: 'RB' },
   { id: '4', name: 'CHARAOUI', position: 'LM' },
   { id: '5', name: 'EL KHADIR', position: 'RM' },
 ];
